@@ -30,3 +30,9 @@ interface Offers {
   shower: string;
   occupants: string;
 }
+
+export interface FilterProps {
+  label: string;
+  isSelected: boolean;
+  onClick: (selectedFilter: string) => void;
+}
