@@ -6,6 +6,16 @@ export const HERO_BACKGROUND_iMAGE_DESKTOP = "/assets/images/hero-desktop.png";
 
 export const HERO_BACKGROUND_iMAGE_MOBILE = "/assets/images/hero-desktop.png";
 
+export const FILTER_LABELS: string[] = [
+  "All",
+  "Top Villa",
+  "Free Reschedule",
+  "Book now, Pay Later",
+  "Self check-in",
+  "Instant Book",
+];
+
+// ...existing code...
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
@@ -22,7 +32,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-6",
     },
-    image: "https://example.com/image1.jpg",
+    image: "/assets/images/List 1.png",
     discount: "",
   },
   {
@@ -40,7 +50,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7",
     },
-    image: "https://example.com/image2.jpg",
+    image: "/assets/images/List 2.png",
     discount: "30",
   },
   {
@@ -58,7 +68,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3",
     },
-    image: "https://example.com/image3.jpg",
+    image: "/assets/images/List 3.png",
     discount: "",
   },
   {
@@ -76,7 +86,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "2-4",
     },
-    image: "https://example.com/image4.jpg",
+    image: "/assets/images/List 4.png",
     discount: "15",
   },
   {
@@ -94,7 +104,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "4-6",
     },
-    image: "https://example.com/image5.jpg",
+    image: "/assets/images/List 4-1.png",
     discount: "20",
   },
   {
@@ -112,7 +122,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "4",
       occupants: "8-10",
     },
-    image: "https://example.com/image6.jpg",
+    image: "/assets/images/List 6.png",
     discount: "",
   },
   {
@@ -130,7 +140,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "4-5",
     },
-    image: "https://example.com/image7.jpg",
+    image: "/assets/images/List 7.png",
     discount: "10",
   },
   {
@@ -148,7 +158,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "3",
       occupants: "5-6",
     },
-    image: "https://example.com/image8.jpg",
+    image: "/assets/images/List 8.png",
     discount: "25",
   },
   {
@@ -166,7 +176,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "1",
       occupants: "2-3",
     },
-    image: "https://example.com/image9.jpg",
+    image: "/assets/images/List 9.png",
     discount: "",
   },
   {
@@ -184,187 +194,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
       shower: "2",
       occupants: "5-7",
     },
-    image: "https://example.com/image10.jpg",
+    image: "/assets/images/List 10.png",
     discount: "40",
-  },
-  {
-    name: "Cliffside Villa",
-    address: {
-      state: "Amalfi",
-      city: "Salerno",
-      country: "Italy",
-    },
-    rating: 4.93,
-    category: ["Cliffside", "Infinity Pool", "Sea View"],
-    price: 6000,
-    offers: {
-      bed: "4",
-      shower: "4",
-      occupants: "6-8",
-    },
-    image: "https://example.com/image11.jpg",
-    discount: "50",
-  },
-  {
-    name: "Coastal Escape Villa",
-    address: {
-      state: "Noosa",
-      city: "Queensland",
-      country: "Australia",
-    },
-    rating: 4.83,
-    category: ["Beachfront", "Pet Friendly", "Free Parking"],
-    price: 3400,
-    offers: {
-      bed: "3",
-      shower: "3",
-      occupants: "4-6",
-    },
-    image: "https://example.com/image12.jpg",
-    discount: "",
-  },
-  {
-    name: "Historical Villa",
-    address: {
-      state: "Florence",
-      city: "Tuscany",
-      country: "Italy",
-    },
-    rating: 4.67,
-    category: ["Historical", "Free Breakfast", "Self Checkin"],
-    price: 2700,
-    offers: {
-      bed: "2",
-      shower: "2",
-      occupants: "2-4",
-    },
-    image: "https://example.com/image13.jpg",
-    discount: "35",
-  },
-  {
-    name: "Downtown Apartment",
-    address: {
-      state: "Tokyo",
-      city: "Tokyo",
-      country: "Japan",
-    },
-    rating: 4.81,
-    category: ["City Center", "Free WiFi", "Public Transport"],
-    price: 2200,
-    offers: {
-      bed: "1",
-      shower: "1",
-      occupants: "2",
-    },
-    image: "https://example.com/image14.jpg",
-    discount: "",
-  },
-  {
-    name: "Luxury Safari Lodge",
-    address: {
-      state: "Serengeti",
-      city: "Mara",
-      country: "Tanzania",
-    },
-    rating: 4.97,
-    category: ["Safari", "Guided Tours", "Free Breakfast"],
-    price: 4500,
-    offers: {
-      bed: "4",
-      shower: "4",
-      occupants: "6-8",
-    },
-    image: "https://example.com/image15.jpg",
-    discount: "20",
-  },
-  {
-    name: "Countryside Cottage",
-    address: {
-      state: "Cotswolds",
-      city: "Gloucestershire",
-      country: "UK",
-    },
-    rating: 4.58,
-    category: ["Countryside", "Fireplace", "Self Checkin"],
-    price: 1800,
-    offers: {
-      bed: "2",
-      shower: "1",
-      occupants: "2-4",
-    },
-    image: "https://example.com/image16.jpg",
-    discount: "25",
-  },
-  {
-    name: "Riverfront Mansion",
-    address: {
-      state: "Paris",
-      city: "Île-de-France",
-      country: "France",
-    },
-    rating: 4.86,
-    category: ["Riverfront", "Private Garden", "Self Checkin"],
-    price: 5000,
-    offers: {
-      bed: "4",
-      shower: "3",
-      occupants: "6-8",
-    },
-    image: "https://example.com/image17.jpg",
-    discount: "30",
-  },
-  {
-    name: "Ski Chalet",
-    address: {
-      state: "Zermatt",
-      city: "Valais",
-      country: "Switzerland",
-    },
-    rating: 4.75,
-    category: ["Mountain View", "Ski Access", "Fireplace"],
-    price: 3900,
-    offers: {
-      bed: "3",
-      shower: "3",
-      occupants: "4-5",
-    },
-    image: "https://example.com/image18.jpg",
-    discount: "",
-  },
-  {
-    name: "Island Paradise Villa",
-    address: {
-      state: "Mahe",
-      city: "Victoria",
-      country: "Seychelles",
-    },
-    rating: 4.98,
-    category: ["Beachfront", "Private Pool", "Chef Service"],
-    price: 6500,
-    offers: {
-      bed: "5",
-      shower: "5",
-      occupants: "8-10",
-    },
-    image: "https://example.com/image19.jpg",
-    discount: "60",
-  },
-  {
-    name: "Clifftop Retreat",
-    address: {
-      state: "Cape Town",
-      city: "Western Cape",
-      country: "South Africa",
-    },
-    rating: 4.78,
-    category: ["Ocean View", "Private Pool", "Self Checkin"],
-    price: 4100,
-    offers: {
-      bed: "3",
-      shower: "3",
-      occupants: "4-5",
-    },
-    image: "https://example.com/image20.jpg",
-    discount: "",
   },
 ];
