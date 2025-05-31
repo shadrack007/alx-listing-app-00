@@ -1,8 +1,13 @@
-const Layout: React.FC = () => {
+import Footer from "./Footer";
+import Header from "./Header";
+
+const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
-    <div>
-      <p>layout</p>
-    </div>
+    <>
+      <Header />
+      <main className="min-h-screen">{children}</main>
+      <Footer />
+    </>
   );
 };
 
