@@ -2,6 +2,10 @@ import { PropertyProps } from "@/interfaces";
 
 export const BASE_API = "http://localhost:3000/api/v1";
 
+export const HERO_BACKGROUND_iMAGE_DESKTOP = "/assets/images/hero-desktop.png";
+
+export const HERO_BACKGROUND_iMAGE_MOBILE = "/assets/images/hero-desktop.png";
+
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
