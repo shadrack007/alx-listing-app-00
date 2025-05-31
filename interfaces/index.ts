@@ -36,3 +36,10 @@ export interface FilterProps {
   isSelected: boolean;
   onClick: (selectedFilter: string) => void;
 }
+
+export interface PropertyCardProps {
+  name: string;
+  image: string;
+  price: number;
+  rating: number;
+}
