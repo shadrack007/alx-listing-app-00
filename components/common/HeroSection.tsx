@@ -6,7 +6,14 @@ import {
 const HeroSection: React.FC = () => {
   return (
     <section
-      className={`bg-[url(${HERO_BACKGROUND_iMAGE_MOBILE})] md:bg-[url(${HERO_BACKGROUND_iMAGE_DESKTOP})] h-[286px]  md:h-[421px] lg:h-[481px]  bg-no-repeat bg-center bg-cover text-white text-center flex flex-col justify-center items-center rounded-xl`}
+      style={{
+        backgroundImage: `url(${HERO_BACKGROUND_iMAGE_MOBILE})`,
+        // Responsive background image for desktop
+        ...(typeof window !== "undefined" && window.innerWidth >= 768
+          ? { backgroundImage: `url(${HERO_BACKGROUND_iMAGE_DESKTOP})` }
+          : {}),
+      }}
+      className={`h-[286px] md:h-[421px] lg:h-[481px]  bg-no-repeat bg-center bg-cover text-white text-center flex flex-col justify-center items-center rounded-xl`}
     >
       <h1 className="font-semibold text-3xl md:text-[68px] lg:text-[94px]">
         Find your favorite <br /> place here!
