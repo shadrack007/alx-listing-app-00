@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { PropertyCardProps } from "@/interfaces";
+import { useRouter } from "next/router";
+import { slugify } from "@/utils/slugify";
 
 const PropertyCard: React.FC<PropertyCardProps> = ({
   name,
@@ -8,8 +10,21 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   rating,
   price,
 }) => {
+  const router = useRouter();
+  const pathName = router.pathname;
+
+  const handleCardClick = (name: string) => {
+    const basePath = pathName.endsWith("/") ? pathName.slice(0, -1) : pathName;
+    const slug = slugify(name);
+
+    router.push(`${basePath}/property/${slug}`);
+  };
+
   return (
-    <div className="hover:cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out rounded-2xl bg-white">
+    <div
+      onClick={() => handleCardClick(name)}
+      className="hover:cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out rounded-2xl bg-white"
+    >
       <Image
         className="rounded-2xl w-full"
         src={image}
