@@ -15,8 +15,17 @@ export interface PropertyProps {
   category: string[];
   price: number;
   offers: Offers;
-  image: string;
+  images: string[];
+  description: string;
+  reviews: Review[];
   discount: string;
+}
+
+export interface Review {
+  avatar: string;
+  name: string;
+  rating: number;
+  comment: string;
 }
 
 interface AddressProps {
